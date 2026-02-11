@@ -1,78 +1,122 @@
-/* =========================
-   Brand colours
-   ========================= */
-
 :root {
-  --primary: #2c4c45;    /* Deep green */
-  --secondary: #a97c50;  /* Bronze */
-  --accent: #d9cab3;     /* Warm sand */
-  --text: #3d3737;       /* Charcoal */
+  --primary: #2c4c45;
+  --secondary: #a97c50;
+  --accent: #d9cab3;
+  --text: #3d3737;
 }
-
-/* =========================
-   Base styles
-   ========================= */
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: var(--accent);
   color: var(--text);
   line-height: 1.6;
 }
 
-/* =========================
-   Header
-   ========================= */
+/* ---------- Layout ---------- */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* ---------- Header / Nav ---------- */
 
 header {
-  background-color: var(--primary);
+  background: white;
+  border-bottom: 4px solid var(--primary);
+}
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav img {
+  height: 55px;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background: url("images/hero.jpg") center/cover no-repeat;
   color: white;
-  padding: 50px 20px;
-  text-align: center;
+  padding: 120px 20px;
 }
 
-header p {
+.hero-box {
   max-width: 600px;
-  margin: 10px auto 0;
+  background: rgba(44, 76, 69, 0.9);
+  padding: 40px;
 }
 
-/* Logo */
-.logo {
-  max-width: 160px;
-  margin-bottom: 20px;
+.hero h1 {
+  margin-top: 0;
 }
 
-/* =========================
-   Content sections
-   ========================= */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: var(--secondary);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-section {
-  max-width: 900px;
+/* ---------- Sections ---------- */
+
+.section {
+  background: white;
   margin: 40px auto;
-  background-color: white;
-  padding: 30px 40px;
-  border-radius: 6px;
+  padding: 40px;
   border-top: 6px solid var(--secondary);
 }
 
-/* Headings */
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin-top: 0;
+.section h2 {
   color: var(--primary);
 }
 
-/* =========================
-   Footer
-   ========================= */
+/* ---------- Grid ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* ---------- Team ---------- */
+
+.team img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* ---------- Footer ---------- */
 
 footer {
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 0.9em;
-  color: var(--text);
+  background: var(--primary);
+  color: white;
+  padding: 40px 20px;
 }
+
+footer img {
+  height: 40px;
+}
+
+footer p {
+  margin: 10px 0 0;
+}
+
