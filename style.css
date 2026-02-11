@@ -1,3 +1,10 @@
+:root {
+  --primary: #2c4c45;
+  --secondary: #a97c50;
+  --accent: #d9cab3;
+  --text: #3d3737;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
