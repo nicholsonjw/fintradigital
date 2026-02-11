@@ -51,7 +51,7 @@ header {
 /* ---------- Hero ---------- */
 
 .hero {
-  background: url("images/hero.jpg") center/cover no-repeat;
+  background: url("images/landing.jpg") center/cover no-repeat;
   color: white;
   padding: 120px 20px;
 }
